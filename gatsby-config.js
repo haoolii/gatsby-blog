@@ -40,6 +40,10 @@ module.exports = {
     {
       resolve: "gatsby-plugin-mdx",
       options: {
+        extensions: [`.md`, `.mdx`],
+        gatsbyRemarkPlugins: [
+          'gatsby-remark-prismjs'
+        ],
         defaultLayouts: {
           posts: require.resolve("./src/components/post-layout.js"),
         },

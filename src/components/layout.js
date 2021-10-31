@@ -162,7 +162,7 @@ export default function Layout({
           </div>
         ) : null}
         <div className="lg:pl-32 mt-12">
-          <div className="max-w-md">
+          <div>
             {children}
           </div>
         </div>

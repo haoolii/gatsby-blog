@@ -27,7 +27,7 @@ cover: Anoth
 
 ## formatDate
 
-```typescript=
+```typescript
 import { formatDate } from '@angular/common';
 ```
 
@@ -41,7 +41,7 @@ import { formatDate } from '@angular/common';
 ![](https://i.imgur.com/w0dEhme.png)
 
 #### 使用
-```typescript=
+```typescript
 const date = new Date();
 formatDate(date, 'YYYY-MM-DD', 'zh-Hant-TW'); // YYYY-10-DD ISO格式部分無法
 formatDate(date, 'mm:ss', 'zh-Hant-TW');  // 57:09
@@ -52,7 +52,7 @@ formatDate(date, 'shortTime', 'zh-Hant-TW'); // 下午1:57
 那`Angular`的時間格式就是`Date Pipe`的文件囉！
 https://angular.io/api/common/DatePipe
 
-```typescript=
+```typescript
 const date = new Date();
 formatDate(date, 'full', 'zh-Hant-TW', '+0400'); // 2020年10月24日 星期六 上午10:16:54 [GMT+04:00]
 formatDate(date, 'full', 'zh-Hant-TW'); // 2020年10月24日 星期六 下午2:16:54 [GMT+08:00]
@@ -69,7 +69,7 @@ formatDate(date, 'full', 'zh-Hant-TW'); // 2020年10月24日 星期六 下午2:1
 ![](https://i.imgur.com/myxl0Do.png)
 `locale`其實就是區域代碼，預設是沒有`zh-Hant-TW`，這是自行在模組內註冊。
 
-```typescript=
+```typescript
 import { registerLocaleData } from '@angular/common';
 import zhHant from '@angular/common/locales/zh-Hant';
 registerLocaleData(zhHant, 'zh-Hant-TW');
