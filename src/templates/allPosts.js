@@ -13,7 +13,7 @@ export default function ArticlesPage({ pageContext, data }) {
 }
 
 export const pageQuery = graphql`
-  query ALLPostsQueryTpl($skip: Int!, $limit: Int!) {
+  query ALLPostsQueryTpl($skip: Int = 0, $limit: Int = 3) {
     allMdx(
       sort: { fields: frontmatter___date, order: DESC }
       skip: $skip

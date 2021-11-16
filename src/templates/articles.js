@@ -1,27 +1,9 @@
 import * as React from "react";
-import { Link, graphql, useStaticQuery } from "gatsby";
+import { Link, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../components/layout.js";
 
 export default function ArticlesPage({ pageContext, data }) {
-  // const data = useStaticQuery(graphql`
-  //   query GetBlogPosts {
-  //     allMdx(
-  //       sort: { fields: frontmatter___date, order: DESC}
-  //     ) {
-  //       nodes {
-  //         id
-  //         slug
-  //         frontmatter {
-  //           title
-  //           description
-  //           date(fromNow: true, locale: "tw")
-  //         }
-  //       }
-  //     }
-  //   }
-  // `);
-
   const { currentPage, numPages } = pageContext;
 
   const posts = data.allMdx.edges;
@@ -136,7 +118,7 @@ export default function ArticlesPage({ pageContext, data }) {
 }
 
 export const pageQuery = graphql`
-  query ALLPostsQuery($skip: Int!, $limit: Int!) {
+  query ALLPostsQuery($skip: Int = 0, $limit: Int = 3) {
     allMdx(
       sort: { fields: frontmatter___date, order: DESC }
       skip: $skip
