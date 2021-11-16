@@ -12,7 +12,9 @@ export default function PostLayout({ children, pageContext }) {
               {title}
             </h1>
           </header>
-          {children}
+          <div className="prose md:max-w-4xl">
+            {children}
+          </div>
         </article>
       </div>
     </Layout>
