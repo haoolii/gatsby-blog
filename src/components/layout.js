@@ -53,42 +53,6 @@ export default function Layout({
                 >
                   Articles
                 </Link>
-                <a
-                  href="/talks"
-                  className="   font-semibold no-underline text-gray-400 hover:text-black"
-                >
-                  Talks
-                </a>
-                <a
-                  href="/screencasts"
-                  className="   font-semibold no-underline text-gray-400 hover:text-black"
-                >
-                  Screencasts
-                </a>
-                <a
-                  href="/podcast"
-                  className="   font-semibold no-underline text-gray-400 hover:text-black"
-                >
-                  Podcast
-                </a>
-                <a
-                  href="/courses"
-                  className="   font-semibold no-underline text-gray-400 hover:text-black"
-                >
-                  Courses
-                </a>
-                <a
-                  href="/projects"
-                  className="   font-semibold no-underline text-gray-400 hover:text-black"
-                >
-                  Projects
-                </a>
-                <a
-                  href="/journal"
-                  className="   font-semibold no-underline text-gray-400 hover:text-black"
-                >
-                  Journal
-                </a>
               </div>
             </div>
           </div>
