@@ -7,3 +7,7 @@
         font-size: 48px;
     }
 }
+
+.active {
+    @apply text-black;
+}

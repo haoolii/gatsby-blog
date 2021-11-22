@@ -23,7 +23,9 @@ export default function AboutPage({ data }) {
       description="More infomation about this site."
     >
       {/* <GatsbyImage image={getImage(data.file)} alt="cocktail" /> */}
-      <h1>About This Site</h1>
+      <div className="pb-4">
+        <h2>About This Site</h2>
+      </div>
       <Link to="/">Go Home</Link>
     </Layout>
   );

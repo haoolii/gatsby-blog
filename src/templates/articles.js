@@ -73,7 +73,7 @@ export default function ArticlesPage({ pageContext, data }) {
               <li key={i}>
                 <Link to={`/articles/${i === 0 ? "" : i + 1}`}>
                   {i + 1 === currentPage ? (
-                    <button className="w-8 h-8 text-white text-xs transition-colors duration-150 bg-gray-400 border border-r-0 border-gray-400 rounded-full focus:shadow-outline font-semibold">
+                    <button className="w-8 h-8 text-white text-xs transition-colors duration-150 bg-black border-r-0 rounded-full focus:shadow-outline font-semibold">
                       {i + 1}
                     </button>
                   ) : (
@@ -107,14 +107,6 @@ export default function ArticlesPage({ pageContext, data }) {
 
     </Layout>
   );
-  // const { currentPage, numPages } = pageContext;
-
-  // return (
-  //   <div>
-  //     Hello World
-  //     <pre>{JSON.stringify(pageContext, null, 2)}</pre>
-  //   </div>
-  // );
 }
 
 export const pageQuery = graphql`

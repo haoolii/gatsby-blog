@@ -50,8 +50,18 @@ export default function Layout({
                 <Link
                   to="/articles"
                   className="font-semibold no-underline text-gray-400 hover:text-black"
+                  activeClassName="active"
+                  partiallyActive={true}
                 >
                   Articles
+                </Link>
+                <Link
+                  to="/about"
+                  className="font-semibold no-underline text-gray-400 hover:text-black"
+                  activeClassName="active"
+                  partiallyActive={true}
+                >
+                  About
                 </Link>
               </div>
             </div>
@@ -80,48 +90,22 @@ export default function Layout({
         {mobileNav ? (
           <div className="md:hidden z-10 bg-white fixed pin pt-24 block top-0 left-0 h-full w-full">
             <div className="space-y-8 pt-6 pb-8 px-12 max-h-full">
-              <a
-                href="/articles"
-                className="block text-black font-bold no-underline"
+              <Link
+                to="/articles"
+                className="block text-gray-400 hover:text-black font-bold no-underline "
+                activeClassName="active"
+                partiallyActive={true}
               >
                 Articles
-              </a>{" "}
-              <a
-                href="/talks"
-                className="block text-black font-bold no-underline"
+              </Link>
+              <Link
+                to="/about"
+                className="block text-gray-400 hover:text-black font-bold no-underline"
+                activeClassName="active"
+                partiallyActive={true}
               >
-                Talks
-              </a>{" "}
-              <a
-                href="/screencasts"
-                className="block text-black font-bold no-underline"
-              >
-                Screencasts
-              </a>{" "}
-              <a
-                href="/podcast"
-                className="block text-black font-bold no-underline"
-              >
-                Podcast
-              </a>{" "}
-              <a
-                href="/courses"
-                className="block text-black font-bold no-underline"
-              >
-                Courses
-              </a>{" "}
-              <a
-                href="/projects"
-                className="block text-black font-bold no-underline"
-              >
-                Projects
-              </a>{" "}
-              <a
-                href="/journal"
-                className="block text-black font-bold no-underline"
-              >
-                Journal
-              </a>
+                About
+              </Link>
             </div>
           </div>
         ) : null}
