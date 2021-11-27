@@ -16,10 +16,8 @@ export default function ArticlesPage({ pageContext, data }) {
 
       <div className="text-lg text-grey-darkest leading-normal spaced-y-6">
         <p>
-          Over the years I’ve published a few dozen articles — some more
-          noteworthy than others.
+          個人筆記紀錄、開發心得、小抄。
         </p>
-        <p>Here are some of my personal favorites.</p>
       </div>
 
       <div className="mt-12 space-y-10">
@@ -110,7 +108,7 @@ export default function ArticlesPage({ pageContext, data }) {
 }
 
 export const pageQuery = graphql`
-  query ALLPostsQuery($skip: Int = 0, $limit: Int = 3) {
+  query ALLPostsQuery($skip: Int = 0, $limit: Int = 10) {
     allMdx(
       sort: { fields: frontmatter___date, order: DESC }
       skip: $skip

@@ -26,7 +26,7 @@ export default function Layout({
   return (
     <>
       <Seo title={title} description={description} path={path} />
-      <div className="py-8 lg:py-16 px-6 md:px-16 lg:px-24">
+      <div className="container mx-auto py-8 lg:py-16 px-6 md:px-16 lg:px-24">
         <div className="relative z-20 flex justify-between items-center">
           <div className="flex md:block lg:flex items-center max-w-full">
             <div className="mb-0 md:mb-4 lg:mb-0 flex flex-no-shrink pr-4 md:pr-6 lg:pr-12">

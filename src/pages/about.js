@@ -22,11 +22,24 @@ export default function AboutPage({ data }) {
       title="About This Site"
       description="More infomation about this site."
     >
-      {/* <GatsbyImage image={getImage(data.file)} alt="cocktail" /> */}
-      <div className="pb-4">
-        <h2>About This Site</h2>
+      <article className="prose lg:prose-lg">
+      <h2>About this blog</h2>
+        <p>
+          Hi I'm Hao, I'm a frontend engineer. This is my blog. It built by Gatsby.
+        </p>
+        <p>
+          Angular, Tailwindcss, D3js, React, Nodejs, blockchain
+        </p>
+
+        <ul>
+          <li><a href="https://github.com/unnhao" target="_blank">Github</a></li>
+          <li><a href="https://www.linkedin.com/in/hao-li-0ab593130/" target="_blank">LinkedIn</a></li>
+        </ul>
+      </article>
+
+      <div className="mt-8">
+        <Link to="/">Go Home</Link>
       </div>
-      <Link to="/">Go Home</Link>
     </Layout>
   );
 }
